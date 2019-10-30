@@ -189,7 +189,7 @@ public class WebDriverFactory {
             case Chrome:
                 maximize = false;
                 if (!isGrid) {
-                    driver = new ChromeDriver(withChromeOptions(caps));
+                    driver = new ChromeDriver(/*withChromeOptions(caps)*/);
                 } else {
                     caps = DesiredCapabilities.chrome().merge(withChromeOptions(caps));
                 }
